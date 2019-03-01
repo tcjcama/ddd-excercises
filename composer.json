@@ -9,8 +9,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "MyApp\\" : "src",
-            "MyApp\\Tests\\" : "test"
+            "MyApp\\" : "videoclub/src",
+            "MyApp\\Tests\\" : "videoclub/tests"
         }
     },
     "require-dev": {

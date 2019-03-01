@@ -7,9 +7,9 @@ use MyApp\Ui\Web\Controllers\FindFilmController;
 class FindFilmControllerTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @test
+     * @tests
      */
-    public function should_retrieve_film()
+    public function test_should_retrieve_film()
     {
 
         $filmId = '666';

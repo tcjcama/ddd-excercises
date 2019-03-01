@@ -9,13 +9,13 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Unit Tests">
-            <directory suffix="Test.php">./tests/Unit</directory>
+        <testsuite name="videoclub-unit-tests">
+            <directory suffix="Test.php">./videoclub/tests/Unit</directory>
         </testsuite>
     </testsuites>
     <!--<filter>-->
-        <!--<whitelist processUncoveredFilesFromWhitelist="true">-->
-            <!--<directory suffix=".php">./app</directory>-->
-        <!--</whitelist>-->
+    <!--<whitelist processUncoveredFilesFromWhitelist="true">-->
+    <!--<directory suffix=".php">./videoclub/src</directory>-->
+    <!--</whitelist>-->
     <!--</filter>-->
 </phpunit>
