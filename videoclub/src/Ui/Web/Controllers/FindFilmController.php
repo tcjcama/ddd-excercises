@@ -4,7 +4,7 @@ namespace MyApp\Ui\Web\Controllers;
 
 use MyApp\Application\Service\Film\FindFilmCommand;
 use MyApp\Application\Service\Film\FindFilmService;
-use MyApp\Infrastucture\Domain\Model\FilmInMemoryRepository;
+use MyApp\Infrastructure\Domain\Model\FilmInMemoryRepository;
 
 class FindFilmController
 {

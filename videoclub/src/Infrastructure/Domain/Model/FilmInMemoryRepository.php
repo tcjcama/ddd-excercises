@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\Infrastucture\Domain\Model;
+namespace MyApp\Infrastructure\Domain\Model;
 
 use MyApp\Domain\Model\Film;
 use MyApp\Domain\Model\FilmId;

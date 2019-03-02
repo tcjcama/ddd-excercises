@@ -26,18 +26,20 @@ clone repo https://github.com/tcjcama/ddd-exercises.git
 composer install
 ```
 
-3. copy the base phpunit config
-
-```
-cp phpunit.dist.xml phpunit.xml 
-```
-
 3. **Enjoy** !! 🍫
 
 ## Depelopment 🛠
+
+### Testing
 
 Run tests
 
 ```
 ./vendor/bin/phpunit
+```
+
+copy the base phpunit config for custom testing
+
+```
+cp phpunit.xml.dist phpunit.xml 
 ```

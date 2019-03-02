@@ -15,7 +15,7 @@ class FindFilmControllerTest extends \PHPUnit\Framework\TestCase
         $filmId = '666';
         $controller = FindFilmController::getInstance();
 
-        $film = $controller->__invoke($filmId);
+        $film = $controller($filmId);
 
         dump($film);
     }
