@@ -26,7 +26,13 @@ clone repo https://github.com/tcjcama/ddd-exercises.git
 composer install
 ```
 
-3. **Enjoy** !! 🍫
+3. copy the base phpunit config for custom testing
+
+```
+cp phpunit.xml.dist phpunit.xml 
+```
+
+4. **Enjoy** !! 🍫
 
 ## Depelopment 🛠
 
@@ -38,8 +44,8 @@ Run tests
 ./vendor/bin/phpunit
 ```
 
-copy the base phpunit config for custom testing
+Show Code coverage
 
 ```
-cp phpunit.xml.dist phpunit.xml 
+./vendor/bin/phpunit --coverage-html ./coverage/videoclub
 ```
