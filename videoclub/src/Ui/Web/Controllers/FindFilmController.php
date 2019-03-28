@@ -4,7 +4,8 @@ namespace MyApp\Ui\Web\Controllers;
 
 use MyApp\Application\Service\Film\FindFilmCommand;
 use MyApp\Application\Service\Film\FindFilmService;
-use MyApp\Infrastructure\Domain\Model\FilmInMemoryRepository;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 class FindFilmController
 {
@@ -15,17 +16,13 @@ class FindFilmController
         $this->service = $service;
     }
 
-    public static function getInstance(): FindFilmController
+    public function __invoke(int $id): Response
     {
-        return new self(new FindFilmService(
-            new FilmInMemoryRepository()
-        ));
-    }
+        $film = $this->service->execute(new FindFilmCommand($id));
 
-    public function __invoke(string $fimId)
-    {
-        return $this->service->execute(
-            new FindFilmCommand($fimId)
-        );
+        return JsonResponse::create([
+            'id' => $film->getId()->value(),
+            'title' => $film->getTitle()->value(),
+        ]);
     }
 }

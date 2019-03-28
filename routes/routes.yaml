@@ -1,0 +1,6 @@
+foo_route:
+  path: /films/{id}
+  defaults: { _controller: MyApp\Ui\Web\Controllers\FindFilmController }
+  methods: GET
+  requirements:
+    id: '[0-9]+'
