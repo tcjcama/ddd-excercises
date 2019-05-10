@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.1",
         "symfony/routing": "^4.2",
         "symfony/http-foundation": "^4.2",
         "symfony/yaml": "^4.2",
@@ -24,7 +24,7 @@
     },
     "require-dev": {
         "symfony/var-dumper": "^4.2",
-        "phpunit/phpunit": "^8.0",
-        "phpunit/php-code-coverage": "^7.0"
+        "phpunit/phpunit": "*",
+        "phpunit/php-code-coverage": "*"
     }
 }
