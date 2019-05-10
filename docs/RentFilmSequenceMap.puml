@@ -1,0 +1,13 @@
+@startuml
+Web -> RentFilmService: (memberId, filmId)
+RentFilmService -> MemberRepository: findMemberById (memberId)
+MemberRepository --> RentFilmService: Member
+RentFilmService -> Member: rentFilm (filmId)
+Member --> RentFilmService: Rental
+RentFilmService -> RentalRepo: saveRental (Rental)
+
+@enduml
+
+
+Member -> RentalRepo: checkIfItsCurrentlyAvailable (filmId)
+
